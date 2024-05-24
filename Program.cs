@@ -2,7 +2,7 @@
 
 public class HelloWorld 
 {
-    // Primitive Data Types
+    // Explicitly defined Primitive Data Types
     float price = 7.98f;
     string name = "Ahki";
     char letter = 'Z';
@@ -11,6 +11,8 @@ public class HelloWorld
 
     public static void Main(string[] args)
     {
+        // Can only define implicit data types within method
+        var username = "Ahki";
         Console.WriteLine("Total vat is: " + vat);
     }
 }
