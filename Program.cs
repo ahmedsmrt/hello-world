@@ -4,13 +4,16 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-        string paragraph = "What's good out thurr"; 
+        float vat = 7.7f;
+        float productA = 3.92f;
+        float productB = 6.92f;
+        float productC = 12.92f;
 
-        int number = 2;
-        float price = 3.92f;
+        float summed = productA + productB + productC;
+        float totalTax = (summed / 100) * vat;
 
-        Console.WriteLine(paragraph);
+        summed += totalTax;
 
-        Console.WriteLine(number * price);
+        Console.WriteLine(summed);
     }
 }
