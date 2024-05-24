@@ -2,18 +2,11 @@
 
 public class HelloWorld 
 {
+    static float vat = 7.8f;
+
     public static void Main(string[] args)
     {
-        float vat = 7.7f;
-        float productA = 3.92f;
-        float productB = 6.92f;
-        float productC = 12.92f;
-
-        float summed = productA + productB + productC;
-        float totalTax = (summed / 100) * vat;
-
-        summed += totalTax;
-
-        Console.WriteLine(summed);
+        float vat = 17.8f;
+        Console.WriteLine("Total vat is: " + vat);
     }
 }
