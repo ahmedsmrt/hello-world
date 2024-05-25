@@ -1,0 +1,1 @@
+This project is where i'm organizing all of the lessons from a course i am taking and also trying out small projects outside of the scope of the course.
