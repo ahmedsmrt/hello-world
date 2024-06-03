@@ -1,24 +1,32 @@
 using System;
 
-namespace ArraysC
+namespace Program
 {
     class Program 
     {
         static void Main(string[] args)
         {
                     
-        int[] grades = new int[5];
+            int[] nums = new int[10];
+            
 
-        grades[0] = 5;
-        grades[1] = 12;
-        grades[2] = 16;
-        grades[3] = 20;
-        grades[4] = 25;      
-      
-        int[] gradesOfMathStudentsA = {98, 89, 79, 54, 12};
+            for(int i = 0; i< nums.Length; i++)
+            {
+                nums[i] = i + 1;
+            }
 
-        Console.WriteLine($"This is the array for ints {grades.Length}!");
-        System.Console.WriteLine($"These are the grades for our math strudents {gradesOfMathStudentsA.Length};");   
+            // for(int j = 0; j < nums.Length; j++)
+            // {
+            //     System.Console.WriteLine("Element at position {0} = {1}",j, nums[j] );
+            // }
+
+            int counter = 0;
+            foreach(int k in nums)
+            {
+                counter ++;
+                System.Console.WriteLine("Element at position {0} = {1}", counter, k );
+            }
+
         }
     }
 }
