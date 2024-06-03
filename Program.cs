@@ -6,27 +6,20 @@ namespace Program
     {
         static void Main(string[] args)
         {
-                    
-            int[] nums = new int[10];
+            // Define the size of the array
+            int size = 5;
             
+            // Initialize the array
+            string[] friendList = new string[size];
 
-            for(int i = 0; i< nums.Length; i++)
+            // Prompt the user to input names and greet each friend
+            for (int i = 0; i < size; i++)
             {
-                nums[i] = i + 1;
+                Console.Write("Please put in your friend's name: ");
+                string friend = Console.ReadLine();
+                friendList[i] = friend;
+                Console.WriteLine($"Hey {friend}, how've you been fam!");
             }
-
-            // for(int j = 0; j < nums.Length; j++)
-            // {
-            //     System.Console.WriteLine("Element at position {0} = {1}",j, nums[j] );
-            // }
-
-            int counter = 0;
-            foreach(int k in nums)
-            {
-                counter ++;
-                System.Console.WriteLine("Element at position {0} = {1}", counter, k );
-            }
-
         }
     }
 }
